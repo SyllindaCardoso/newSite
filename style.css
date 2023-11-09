@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    transition: margin-left .5s;
+    color: rgb(58, 1, 58);
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin: 20px;
+    align-content: center;
+    float: left;
+}
+
+/* -------------- Menu Bar -------------*/
+
+.topnav {
+    display: flex;
+}
+.topnav a{
+    text-decoration: none;
+    margin: 20px;
+    padding: 20px;
+    list-style: none;
+    white-space: nowrap;
+    font-size: 25px;
+    color: rgb(116, 7, 116);
+    font-family: "Farsan", cursive;
+}
+.topnav a::before {
+    content: '';
+    height: 2px; 
+    width: 0px; 
+    background-color: rgb(58, 1, 58); 
+    display: block;
+}
+
+.topnav a:hover::before {
+    margin-top: 2px;
+    width: 100%;
+    transition: width 0.2s ease;
+}
+
+.topnav a::after {
+    content: '';
+    height: 2px; 
+    width: 0px; 
+    background-color: rgb(58, 1, 58); 
+    display: block;
+}
+
+.topnav a:hover::after {
+    margin-top: 2px;
+    width: 100%;
+    transition: width 0.2s ease;
+}
+
+/* ------ home page ------- */
+#container {
+    background: center;
+}
+#home {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    position: relative;
+    z-index: -1;
+}
+#name {
+    background-size: cover;
+    background-color: white;
+    color: rgb(116, 7, 116);
+    text-align: center;
+    font-family: 'Farsan', cursive;
+}
+
+/* ----------- go to the top button -------------*/ 
+.go-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: rgb(116, 7, 116);
+    color: white;
+    cursor: pointer; /* add a mouse pointer on hover */ 
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+#topBtn:hover {
+    background-color: blueviolet;
+}
+
+/* ---------- About me page ----------*/
+#about-heading {
+    font-family: "Farsan", cursive;
+    text-align: center;
+    color: rgb(116, 7, 116);
+    margin: 80px;
+}
+#aboutMe {
+    font-family: 'Farsan', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(116, 7, 116);
+}
+
+/* ---------- Material page --------*/
+#material-heading {
+    font-family: 'Farsan', cursive;
+    text-align: center;
+    color: rgb(116, 7, 116);
+    margin: 80px;
+}
+#cefr-charts {
+    text-align: center;
+}
+#cefr {
+    width: 250px;
+    height: auto;
+}
+#paragraph-cefr {
+    font-family: "Farsan", cursive;
+    font-size: 24px;
+    color: rgb(116, 7, 116);
+}
+
+/* ------------- Lesson page side bar menu ------ */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(251, 236, 251);
+    overflow: hidden;
+    transition: 0.5s;
+    color: rgb(58, 1, 58);
+    font-family: "Farsan", cursive;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    right: 20px;
+    margin: 10px;
+    color: rgb(58, 1, 58);
+    text-decoration: none;
+}
+
+/*-- code for the paragraph - Lesson -- */
+.sidenav p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-weight: 800;
+}
+
+/*-- menu of the side bar A1 A2 etc --*/
+.sidenav a {
+    transition: 1s;
+    color: rgb(58, 1, 58);
+    display: block;
+    margin: 10px;
+    margin-left: 35px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* ------------------ contact page ------------*/ 
+#contact-wrapper {
+    display: flex;
+    margin-left: auto;
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    font-family: "Farsan", cursive;
+}
+#name {
+    text-align: left;
+}
+input {
+    margin: 15px;
+    height: 50px;
+    font-size: 21px;
+    width: 100%;
+    font-family: "Farsan", cursive;
+}
+
+textarea {
+    font-size: 21px;
+    font-family: "Farsan", cursive;
+    width: 100%;
+    margin: 15px;
+}
+
+input [type=submit] {
+    width: 100%;
+    font-size: 20px;
+    font-family: "Farsan", cursive;
+    cursor: pointer;
+    margin: 15px;
+}
+
+/* ---------- Level A1 page ------------------*/
+#LevelA1 {
+    font-family: "Farsan", cursive;
+    font-size: 18px;
+}
+
+#lessons a {
+    text-decoration: none;
+}
+
+/* -------------- Student Page ------------- */ 
+.students-page {
+    font-family: "Farsan", cursive;
+    font-size: 24px;
+    color: rgb(116, 7, 116);
+    margin-left: 25px;
+}
+
+.A1 a {
+    font-family: "Farsan", cursive;
+    font-size: 18px;
+    margin: 30px;
+    text-decoration: none;
+}
+
+.A1 .activities a {
+    font-family: "Farsan", cursive;
+    font-size: 18px;
+    color: rgb(116, 7, 116);
+    margin: 50px;
+    text-decoration: none;
+}
+
+
+/* ----------------- footer ------------------*/ 
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Farsan', cursive;
+    color: rgb(116, 7, 116);
+}
+
+
+/*
+@media screen and (max-width: 481px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+        float: none; 
+        display: block;
+    }
+}
+
+@media screen and (max-width: 481px) {
+.topnav.responsive .icon {
+    display: none;
+    }
+.topnav {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    width: 5em;
+    }
+}
+
+.topnav.responsive a {
+    float: none; 
+    display: block; 
+    }
+*/
+

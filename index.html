@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--title in the head tag is what is written on the tab of your browser-->
+    <link rel="shortcut icon" href="images/logo_tab.jpg" type="images/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>teachersyll</title>
+</head>
+<body>
+    <!-- everything in the body is your actual site-->
+    <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+    
+    <!--------- Menu Bar --------->
+    <div id="myTopnav" class="topnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#about-me">About</a>
+        <a href="#material-page">Material</a>
+        <a href="#" onclick="openside()">Lesson</a>
+        <a href="#contact-page">Contact</a>
+        <a href="students.html">Login</a>
+    </div>
+    
+    <!---------- Home page --------->
+    <div id="container">
+        <div>
+            <img id="home" src="images/home.jpg">
+        </div> <!-- this div holds the photo on the home page-->
+        <div id="intro">
+            <h1 id="name">Hi there! My name is Syllinda.</h1>
+        </div>
+    </div>
+    
+    <!------ go to the top button ---------->
+    <i onclick="topFunction()" id="topBtn" class="go-to-top">Top</i>
+    <script>
+        // get the button up
+        mybutton = document.getElementById("topBtn");
+
+        // when the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop >20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // when the user clicks on the button, screen scrolls to the top of the page
+        function topFunction() {
+            document.body.scrollTop = 0; // for Safari
+            document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE
+        }
+    </script>
+
+    <!----------- About me page ----------->
+    <div id="about-me">
+        <h1 id="about-heading">About me</h1>
+        <p id="aboutMe">
+            My name is Syllinda, but everbody calls me Syll. <br>
+            I have about 30 years of experience teaching English as a second language. <br>
+            I teach English to children, teenagers, and adults. <br>
+            I have 10 years of experience teaching online. <br> 
+            I have the CELTA Certificate and a post graduation in 
+            English Language and Literature. <br> 
+            I am from Brazil originally, but I lived in London, England for 8 years, <br>
+            and in Vancouver, Canada, for 2 years. 
+        </p>
+    </div>
+
+    <!----------- Matetial page ----------->
+    <div id="material-page">
+        <h1 id="material-heading">Material</h1>
+    </div>
+    <div id="cefr-charts">
+        <img id="cefr" src="images/cefr.jpg" alt="CEFR chart">
+        <p id="paragraph-cefr">
+            When I choose my course material, I always take into account the 
+            material press and CEFR - Common European Framework of Reference.<br>
+            My students are learning everything they are supposed to learn in 
+            each level of English. <br>
+            They are also getting ready for the Cambridge Certificates, 
+            such as IELTS. <br>
+        </p>
+    </div>
+
+    <!------------ Lesson page ---------------->
+    <!-- open Side bar when user clicks on lesson button -->
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeside()">&times;</a>
+        <p>Lesson</p>
+        <a href="lesson1.html">A1</a>
+        <a href="lesson2.html">A2</a>
+        <a href="lesson3.html">B1</a>
+        <a href="lesson4.html">B2</a>
+    </div>
+
+    
+    <script>
+        // open side nav and show contents
+        function openside() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.marginLeft = "250px";
+        }
+
+        // close side bar 
+        function closeside() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.marginLeft = "0";
+        }
+    </script>
+    
+
+    <!------------ Contact page ------------------>
+    <div id="contact-wrapper">
+        <form name="myform" method="post" action="https://formspree.io/Syllinda@gmail.com" autocomplete="on">
+            <h1 id="contact-heading">Contact</h1>
+            <input type="text" name="name" id="name"
+            placeholder="Your name" required> <br>
+            <input type="email" name="email" id="email" size="40"
+            placeholder="Your e-mail address" required> <br> 
+            <textarea id="message" name="message" rows="10" cols="40" maxlength="400"
+            placeholder="Enter your message"></textarea> <br>
+            <input type="submit" value="send">
+        </form>
+    </div>
+
+    <!-------------- login ---------------->
+    
+
+    <!---------------- Footer --------------->
+    <footer>
+        <div class="footer-info">
+            <p id="copyright">&copy 2019 created by teachersyll</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>

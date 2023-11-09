@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="images/logo_tab.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>A1</title>
+    </head>
+    <body>
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+    
+    <!--------- Menu Bar --------->
+        <div id="myTopnav" class="topnav">
+            <a href="index.html" class="active">Home</a>
+
+            <!--
+            <a href="#about-me">About</a>
+            <a href="#material-page">Material</a> -->
+            <a href="#" onclick="openside()">Lesson</a>
+            <!-- 
+            <a href="#contact-page">Contact</a> 
+            -->
+            <a href="#logoin">Login</a>
+        </div>
+
+        <!------ go to the top button ---------->
+        <i onclick="topFunction()" id="topBtn" class="go-to-top">Top</i>
+        <script>
+            // get the button up
+            mybutton = document.getElementById("topBtn");
+
+            // when the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop >20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // when the user clicks on the button, screen scrolls to the top of the page
+            function topFunction() {
+                document.body.scrollTop = 0; // for Safari
+                document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE
+            }
+        </script>
+
+        <!------------ Lesson page side menu ---------------->
+    <!-- open Side bar when user clicks on lesson button -->
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeside()">&times;</a>
+        <p>Lesson</p>
+        <a href="lesson1.html">A1</a>
+        <a href="lesson2.html">A2</a>
+        <a href="lesson3.html">B1</a>
+        <a href="lesson4.html">B2</a>
+    </div>
+
+    
+    <script>
+        // open side nav and show contents
+        function openside() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.marginLeft = "250px";
+        }
+
+        // close side bar 
+        function closeside() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.marginLeft = "0";
+        }
+    </script>
+
+    <!------- list of video lessons ------->
+    <div id="LevelA1">
+        <ul id="lessons">
+            <a href="https://www.youtube.com/watch?v=E6-oQvH6iY8&t=5s" target="_blank">Lesson 1 - Saying hello</a> <br>
+            <a href="https://www.youtube.com/watch?v=osqtBtEtxKg" target="_blank">Lesson 2 - Saying goodbye</a> <br>
+            <a href="https://www.youtube.com/watch?v=h1bzE3zixVU" target="_blank">Lesson 3 - Introcucing people</a> <br>
+            <a href="https://www.youtube.com/watch?v=OUHm-bcrKpI&t=14s" target="_blank">Lesson 4 - the alphabet</a> <br>
+            <a href="https://www.youtube.com/watch?v=6PWZjyRa3C4&t=1s" target="_blank">Lesson 5 - numbers </a> <br>
+            <a href="https://www.youtube.com/watch?v=UvA-iOlI-9E&t=3s" target="_blank">Lesson 6 - more numbers</a> <br>
+            <a href="https://www.youtube.com/watch?v=8dyflQ3tWmI" target="_blank">Pronunciation - 13 vs 30</a> <br>
+            <a href="https://www.youtube.com/watch?v=JO2E7cgj_g8" target="_blank">Pronunciation th in ordinal numbers</a> <br>
+            <a href="https://www.youtube.com/watch?v=aNWWEIL2_wk" target="_blank">Lesson 7 - What's your name</a> <br>
+            <a href="https://www.youtube.com/watch?v=hqgOye1JOaY&t=12s" target="_blank">Lesson 8 - Giving personal information</a> <br>
+            <a href="https://www.youtube.com/watch?v=Nl4-OAjUTEM" target="_blank">Lesson 9 - Saying email address and websites</a> <br>
+            <a href="https://www.youtube.com/watch?v=CgaegYNA3pQ&t=36s" target="_blank">Lesson 10 - verb be</a> <br>
+            <a href="https://www.youtube.com/watch?v=0hXKCGvhA68&t=21s" target="_blank">Lesson 11 - verb be - part II</a> <br>
+            <a href="https://www.youtube.com/watch?v=ul6KecgoLPM&t=11s" target="_blank">Lesson 12 - verb be - conversation</a> <br>
+            <a href="https://www.youtube.com/watch?v=vUzo2m5AF6w&t=7s" target="_blank">Lesson 13 - questions with 'Where'</a> <br>
+            <a href="https://www.youtube.com/watch?v=kw-yoLVR2tQ" target="_blank">Lesson 14 - answer 'Where' questions</a> <br>
+            <a href="https://www.youtube.com/watch?v=8givDCbJa10&t=135s" target="_blank">Lesson 15 - short answer with verb be</a> <br>
+            <a href="https://www.youtube.com/watch?v=nkoXNx-0Hxo" target="_blank">Lesson 16 - Simple present affirmative</a> <br>
+            <a href="https://www.youtube.com/watch?v=jbD1Wy0WNlI&t=9s" target="_blank">Lesson 17 - Simple present negative</a> <br>
+            <a href="https://www.youtube.com/watch?v=_QlG_kgPUtE" target="_blank">Lesson 18 - Simple present questions</a> <br>
+            <a href="https://www.youtube.com/watch?v=fowlh5X331U" target="_blank">Lesson 19 - Routine verb phrases</a> <br>
+            <a href="https://www.youtube.com/watch?v=oTSbLFZUWlo" target="_blank">Lesson 20 - Pronunciation simple past regular verb -ed</a> <br>
+        </ul>
+    </div>
+
+
+    </body>
+</html>
